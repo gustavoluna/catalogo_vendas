@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01CCCBFE1E25B40E00261428 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CCCBFD1E25B40E00261428 /* AppDelegate.swift */; };
+		01CCCC001E25B40E00261428 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CCCBFF1E25B40E00261428 /* ViewController.swift */; };
+		01CCCC031E25B40E00261428 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01CCCC011E25B40E00261428 /* Main.storyboard */; };
+		01CCCC061E25B40E00261428 /* Catalogo_e_vendas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 01CCCC041E25B40E00261428 /* Catalogo_e_vendas.xcdatamodeld */; };
+		01CCCC081E25B40E00261428 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01CCCC071E25B40E00261428 /* Assets.xcassets */; };
+		01CCCC0B1E25B40E00261428 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01CCCC091E25B40E00261428 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01CCCBFA1E25B40E00261428 /* Catalogo e vendas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Catalogo e vendas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01CCCBFD1E25B40E00261428 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		01CCCBFF1E25B40E00261428 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		01CCCC021E25B40E00261428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		01CCCC051E25B40E00261428 /* Catalogo_e_vendas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Catalogo_e_vendas.xcdatamodel; sourceTree = "<group>"; };
+		01CCCC071E25B40E00261428 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01CCCC0A1E25B40E00261428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		01CCCC0C1E25B40E00261428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01CCCBF71E25B40E00261428 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01CCCBF11E25B40E00261428 = {
+			isa = PBXGroup;
+			children = (
+				01CCCBFC1E25B40E00261428 /* Catalogo e vendas */,
+				01CCCBFB1E25B40E00261428 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		01CCCBFB1E25B40E00261428 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01CCCBFA1E25B40E00261428 /* Catalogo e vendas.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01CCCBFC1E25B40E00261428 /* Catalogo e vendas */ = {
+			isa = PBXGroup;
+			children = (
+				01CCCBFD1E25B40E00261428 /* AppDelegate.swift */,
+				01CCCBFF1E25B40E00261428 /* ViewController.swift */,
+				01CCCC011E25B40E00261428 /* Main.storyboard */,
+				01CCCC071E25B40E00261428 /* Assets.xcassets */,
+				01CCCC091E25B40E00261428 /* LaunchScreen.storyboard */,
+				01CCCC0C1E25B40E00261428 /* Info.plist */,
+				01CCCC041E25B40E00261428 /* Catalogo_e_vendas.xcdatamodeld */,
+			);
+			path = "Catalogo e vendas";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01CCCBF91E25B40E00261428 /* Catalogo e vendas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01CCCC0F1E25B40E00261428 /* Build configuration list for PBXNativeTarget "Catalogo e vendas" */;
+			buildPhases = (
+				01CCCBF61E25B40E00261428 /* Sources */,
+				01CCCBF71E25B40E00261428 /* Frameworks */,
+				01CCCBF81E25B40E00261428 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Catalogo e vendas";
+			productName = "Catalogo e vendas";
+			productReference = 01CCCBFA1E25B40E00261428 /* Catalogo e vendas.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01CCCBF21E25B40E00261428 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = LCODE;
+				TargetAttributes = {
+					01CCCBF91E25B40E00261428 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 01CCCBF51E25B40E00261428 /* Build configuration list for PBXProject "Catalogo e vendas" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01CCCBF11E25B40E00261428;
+			productRefGroup = 01CCCBFB1E25B40E00261428 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01CCCBF91E25B40E00261428 /* Catalogo e vendas */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01CCCBF81E25B40E00261428 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01CCCC0B1E25B40E00261428 /* LaunchScreen.storyboard in Resources */,
+				01CCCC081E25B40E00261428 /* Assets.xcassets in Resources */,
+				01CCCC031E25B40E00261428 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01CCCBF61E25B40E00261428 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01CCCC001E25B40E00261428 /* ViewController.swift in Sources */,
+				01CCCBFE1E25B40E00261428 /* AppDelegate.swift in Sources */,
+				01CCCC061E25B40E00261428 /* Catalogo_e_vendas.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		01CCCC011E25B40E00261428 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01CCCC021E25B40E00261428 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		01CCCC091E25B40E00261428 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01CCCC0A1E25B40E00261428 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		01CCCC0D1E25B40E00261428 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		01CCCC0E1E25B40E00261428 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		01CCCC101E25B40E00261428 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Catalogo e vendas/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lcode.Catalogo-e-vendas";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		01CCCC111E25B40E00261428 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Catalogo e vendas/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lcode.Catalogo-e-vendas";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01CCCBF51E25B40E00261428 /* Build configuration list for PBXProject "Catalogo e vendas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01CCCC0D1E25B40E00261428 /* Debug */,
+				01CCCC0E1E25B40E00261428 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01CCCC0F1E25B40E00261428 /* Build configuration list for PBXNativeTarget "Catalogo e vendas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01CCCC101E25B40E00261428 /* Debug */,
+				01CCCC111E25B40E00261428 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		01CCCC041E25B40E00261428 /* Catalogo_e_vendas.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				01CCCC051E25B40E00261428 /* Catalogo_e_vendas.xcdatamodel */,
+			);
+			currentVersion = 01CCCC051E25B40E00261428 /* Catalogo_e_vendas.xcdatamodel */;
+			path = Catalogo_e_vendas.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 01CCCBF21E25B40E00261428 /* Project object */;
+}
