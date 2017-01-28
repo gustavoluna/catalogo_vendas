@@ -1,4 +1,43 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16C68" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Catalogo" representedClassName="Catalogo" syncable="YES" codeGenerationType="class">
+        <attribute name="descricao" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="rel_Catalog_Categ" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Categoria" syncable="YES"/>
+    </entity>
+    <entity name="Categoria" representedClassName="Categoria" syncable="YES" codeGenerationType="class">
+        <attribute name="descricao" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Categorias" representedClassName="Categorias" syncable="YES" codeGenerationType="class">
+        <attribute name="descricao" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Empresa" representedClassName="Empresa" syncable="YES" codeGenerationType="class">
+        <attribute name="celular_Empresa" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="descricao_Empresa" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email_Empresa" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nome_Empresa" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="telefone_Empresa" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="rel_Emp_Catalog" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Catalogo" syncable="YES"/>
+    </entity>
+    <entity name="Entity" representedClassName="Entity" syncable="YES" codeGenerationType="class"/>
+    <entity name="O" representedClassName="O" syncable="YES" codeGenerationType="class"/>
+    <entity name="Usuario" representedClassName="Usuario" syncable="YES" codeGenerationType="class">
+        <attribute name="usu_ID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="usu_Nome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="usu_Senha" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <fetchRequest name="FetchRequest" entity="Entity"/>
+    <configuration name="Configuration"/>
+    <configuration name="O"/>
+    <elements>
+        <element name="Catalogo" positionX="-225" positionY="27" width="128" height="90"/>
+        <element name="Categoria" positionX="-333" positionY="297" width="128" height="73"/>
+        <element name="Categorias" positionX="-459" positionY="45" width="128" height="75"/>
+        <element name="Empresa" positionX="-657" positionY="-99" width="128" height="133"/>
+        <element name="O" positionX="-459" positionY="45" width="128" height="45"/>
+        <element name="Usuario" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="Entity" positionX="-459" positionY="45" width="128" height="45"/>
+    </elements>
 </model>

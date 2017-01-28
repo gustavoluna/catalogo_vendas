@@ -7,23 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01300ADF1E33FF3A00E4BFE5 /* CategoriasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01300ADE1E33FF3A00E4BFE5 /* CategoriasController.swift */; };
+		013B5F3B1E2C0443000F821C /* Empresa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013B5F3A1E2C0443000F821C /* Empresa.swift */; };
+		013B5F3D1E2C0BA7000F821C /* EmpresaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013B5F3C1E2C0BA7000F821C /* EmpresaController.swift */; };
+		014A4D161E32C48200202AC3 /* Catalogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014A4D151E32C48200202AC3 /* Catalogo.swift */; };
+		014A4D181E32CCD500202AC3 /* CatalogoDetalheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014A4D171E32CCD500202AC3 /* CatalogoDetalheViewController.swift */; };
+		0175FA261E31889F00797469 /* CatalogoListaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175FA251E31889F00797469 /* CatalogoListaViewController.swift */; };
+		0175FA291E31897900797469 /* CatalogoDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175FA281E31897900797469 /* CatalogoDomain.swift */; };
+		017C02D81E28491A0010E5CB /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017C02D71E28491A0010E5CB /* Usuario.swift */; };
+		01A63C131E384A3900AFEDDF /* CatalogoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A63C121E384A3900AFEDDF /* CatalogoTableViewCell.swift */; };
+		01B1B2641E2EEEB300F04B2B /* CatalogoAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B1B2631E2EEEB300F04B2B /* CatalogoAddViewController.swift */; };
+		01B1B2661E2EF4C700F04B2B /* CatalogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B1B2651E2EF4C700F04B2B /* CatalogoViewController.swift */; };
 		01CCCBFE1E25B40E00261428 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CCCBFD1E25B40E00261428 /* AppDelegate.swift */; };
 		01CCCC001E25B40E00261428 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CCCBFF1E25B40E00261428 /* ViewController.swift */; };
 		01CCCC031E25B40E00261428 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01CCCC011E25B40E00261428 /* Main.storyboard */; };
 		01CCCC061E25B40E00261428 /* Catalogo_e_vendas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 01CCCC041E25B40E00261428 /* Catalogo_e_vendas.xcdatamodeld */; };
 		01CCCC081E25B40E00261428 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01CCCC071E25B40E00261428 /* Assets.xcassets */; };
 		01CCCC0B1E25B40E00261428 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01CCCC091E25B40E00261428 /* LaunchScreen.storyboard */; };
+		01EBE0BA1E29B1770087248E /* PrincipalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EBE0B91E29B1770087248E /* PrincipalController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01300ADE1E33FF3A00E4BFE5 /* CategoriasController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriasController.swift; sourceTree = "<group>"; };
+		013B5F3A1E2C0443000F821C /* Empresa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Empresa.swift; sourceTree = "<group>"; };
+		013B5F3C1E2C0BA7000F821C /* EmpresaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmpresaController.swift; sourceTree = "<group>"; };
+		014A4D151E32C48200202AC3 /* Catalogo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Catalogo.swift; sourceTree = "<group>"; };
+		014A4D171E32CCD500202AC3 /* CatalogoDetalheViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogoDetalheViewController.swift; sourceTree = "<group>"; };
+		0175FA251E31889F00797469 /* CatalogoListaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogoListaViewController.swift; sourceTree = "<group>"; };
+		0175FA281E31897900797469 /* CatalogoDomain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogoDomain.swift; sourceTree = "<group>"; };
+		017C02D71E28491A0010E5CB /* Usuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
+		01A63C121E384A3900AFEDDF /* CatalogoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogoTableViewCell.swift; sourceTree = "<group>"; };
+		01B1B2631E2EEEB300F04B2B /* CatalogoAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogoAddViewController.swift; sourceTree = "<group>"; };
+		01B1B2651E2EF4C700F04B2B /* CatalogoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogoViewController.swift; sourceTree = "<group>"; };
 		01CCCBFA1E25B40E00261428 /* Catalogo e vendas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Catalogo e vendas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01CCCBFD1E25B40E00261428 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		01CCCBFF1E25B40E00261428 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		01CCCBFF1E25B40E00261428 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "Catalogo e vendas/ViewController.swift"; sourceTree = "<group>"; };
 		01CCCC021E25B40E00261428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01CCCC051E25B40E00261428 /* Catalogo_e_vendas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Catalogo_e_vendas.xcdatamodel; sourceTree = "<group>"; };
 		01CCCC071E25B40E00261428 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01CCCC0A1E25B40E00261428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01CCCC0C1E25B40E00261428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01EBE0B91E29B1770087248E /* PrincipalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrincipalController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,9 +61,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0175FA271E31895D00797469 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				0175FA281E31897900797469 /* CatalogoDomain.swift */,
+			);
+			name = Domain;
+			sourceTree = "<group>";
+		};
+		017C02CB1E2835220010E5CB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				017C02D71E28491A0010E5CB /* Usuario.swift */,
+				013B5F3A1E2C0443000F821C /* Empresa.swift */,
+				014A4D151E32C48200202AC3 /* Catalogo.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		017C02CC1E2835290010E5CB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				01CCCC011E25B40E00261428 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		017C02CD1E28352F0010E5CB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				01CCCBFF1E25B40E00261428 /* ViewController.swift */,
+				01EBE0B91E29B1770087248E /* PrincipalController.swift */,
+				013B5F3C1E2C0BA7000F821C /* EmpresaController.swift */,
+				01B1B2631E2EEEB300F04B2B /* CatalogoAddViewController.swift */,
+				01B1B2651E2EF4C700F04B2B /* CatalogoViewController.swift */,
+				0175FA251E31889F00797469 /* CatalogoListaViewController.swift */,
+				014A4D171E32CCD500202AC3 /* CatalogoDetalheViewController.swift */,
+				01300ADE1E33FF3A00E4BFE5 /* CategoriasController.swift */,
+				01A63C121E384A3900AFEDDF /* CatalogoTableViewCell.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		01CCCBF11E25B40E00261428 = {
 			isa = PBXGroup;
 			children = (
+				0175FA271E31895D00797469 /* Domain */,
+				017C02CD1E28352F0010E5CB /* Controller */,
+				017C02CC1E2835290010E5CB /* View */,
+				017C02CB1E2835220010E5CB /* Model */,
 				01CCCBFC1E25B40E00261428 /* Catalogo e vendas */,
 				01CCCBFB1E25B40E00261428 /* Products */,
 			);
@@ -57,8 +127,6 @@
 			isa = PBXGroup;
 			children = (
 				01CCCBFD1E25B40E00261428 /* AppDelegate.swift */,
-				01CCCBFF1E25B40E00261428 /* ViewController.swift */,
-				01CCCC011E25B40E00261428 /* Main.storyboard */,
 				01CCCC071E25B40E00261428 /* Assets.xcassets */,
 				01CCCC091E25B40E00261428 /* LaunchScreen.storyboard */,
 				01CCCC0C1E25B40E00261428 /* Info.plist */,
@@ -139,9 +207,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01B1B2661E2EF4C700F04B2B /* CatalogoViewController.swift in Sources */,
+				0175FA291E31897900797469 /* CatalogoDomain.swift in Sources */,
 				01CCCC001E25B40E00261428 /* ViewController.swift in Sources */,
 				01CCCBFE1E25B40E00261428 /* AppDelegate.swift in Sources */,
+				0175FA261E31889F00797469 /* CatalogoListaViewController.swift in Sources */,
+				013B5F3D1E2C0BA7000F821C /* EmpresaController.swift in Sources */,
+				01EBE0BA1E29B1770087248E /* PrincipalController.swift in Sources */,
+				013B5F3B1E2C0443000F821C /* Empresa.swift in Sources */,
+				017C02D81E28491A0010E5CB /* Usuario.swift in Sources */,
 				01CCCC061E25B40E00261428 /* Catalogo_e_vendas.xcdatamodeld in Sources */,
+				01300ADF1E33FF3A00E4BFE5 /* CategoriasController.swift in Sources */,
+				01B1B2641E2EEEB300F04B2B /* CatalogoAddViewController.swift in Sources */,
+				014A4D161E32C48200202AC3 /* Catalogo.swift in Sources */,
+				014A4D181E32CCD500202AC3 /* CatalogoDetalheViewController.swift in Sources */,
+				01A63C131E384A3900AFEDDF /* CatalogoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +234,7 @@
 				01CCCC021E25B40E00261428 /* Base */,
 			);
 			name = Main.storyboard;
+			path = "Catalogo e vendas";
 			sourceTree = "<group>";
 		};
 		01CCCC091E25B40E00261428 /* LaunchScreen.storyboard */ = {
@@ -303,6 +384,7 @@
 				01CCCC111E25B40E00261428 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
