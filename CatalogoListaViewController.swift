@@ -13,12 +13,9 @@ import Foundation
 class CatalogoListaViewController: UIViewController,UITableViewDataSource {
     
    
-   
-   
-
     //class CatalogoListaViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
-
+   
     
     private let segueEditQuoteViewController = "detailSegue"
     var Listacatalogo = [catalogoDomain]();
@@ -43,7 +40,7 @@ class CatalogoListaViewController: UIViewController,UITableViewDataSource {
     //bailoni
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        //return arrayDados.count
+        
         return Listacatalogo.count;
         
     }
