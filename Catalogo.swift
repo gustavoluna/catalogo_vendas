@@ -22,9 +22,9 @@ class Catalogos
          
          let context =  appDelegate1.persistentContainer.viewContext*/
         
-        let sharedInstance = Empresas()
+        //let sharedInstance = Empresas()
         
-        var empresa_ = [Empresas]()
+        //var empresa_ = [Empresas]()
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         
         

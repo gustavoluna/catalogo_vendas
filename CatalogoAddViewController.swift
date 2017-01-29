@@ -21,9 +21,15 @@ class CatalogoAddViewController: UIViewController {
 
     @IBAction func btnGravar(_ sender: Any) {
         
-        /*let objCatalogos = Catalogos();
-        objCatalogos.incluirCatalogo(Nome: txtNome.text!, Descricao: txtDescricao.text!);*/
+        let objCatalogos = Catalogos();
+        objCatalogos.incluirCatalogo(Nome: txtNome.text!, Descricao: txtDescricao.text!);
+         NotificationCenter.default.post(name: .UIDeviceBatteryLevelDidChange, object: nil)
         
+        NotificationCenter.default.post(name: .reload, object: nil)
+        _ = navigationController?.popViewController(animated: true)
+        
+        //NotificationCenter.defaultCenter().postNotificationName("load", object: nil)
+       
     }
     
     

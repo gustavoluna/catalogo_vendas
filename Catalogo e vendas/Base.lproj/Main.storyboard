@@ -108,6 +108,17 @@
                                             <segue destination="cGo-tO-Bn0" kind="show" id="lEQ-MM-mVM"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BIT-6z-RQ2">
+                                        <rect key="frame" x="20" y="91" width="62" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Catálogo">
+                                            <color key="titleShadowColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn_Config:" destination="3f2-92-ohT" eventType="touchUpInside" id="Ufh-Ix-Fde"/>
+                                            <segue destination="mXS-tk-JPY" kind="show" id="OxB-4L-SPY"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -214,6 +225,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HOZ-17-hRh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3314" y="-498"/>
+        </scene>
+        <!--Unidade Medida Lista Controller-->
+        <scene sceneID="6vE-fe-s9n">
+            <objects>
+                <viewController id="mXS-tk-JPY" customClass="UnidadeMedidaListaController" customModule="Catalogo_e_vendas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sr2-rF-kDa"/>
+                        <viewControllerLayoutGuide type="bottom" id="MqE-bL-qTb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="we0-8o-LHv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nv3-ND-hI1">
+                                <rect key="frame" x="-10" y="-16" width="388" height="669"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Nv3-ND-hI1" id="dBT-sI-UBf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DaC-2S-EyC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1920.8" y="736.28185907046486"/>
         </scene>
         <!--Catalogo Add View Controller-->
         <scene sceneID="lwb-67-xHZ">
@@ -345,6 +384,7 @@
                                 <state key="normal" title="Alterar"/>
                                 <connections>
                                     <action selector="btnAlterar:" destination="hgQ-1g-EEA" eventType="touchUpInside" id="DQ4-Iy-yQm"/>
+                                    <action selector="btnGravar:" destination="hgQ-1g-EEA" eventType="touchUpInside" id="tg4-Hm-WzX"/>
                                 </connections>
                             </button>
                         </subviews>

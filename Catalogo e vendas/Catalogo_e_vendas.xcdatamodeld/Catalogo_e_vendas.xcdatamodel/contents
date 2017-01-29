@@ -23,6 +23,14 @@
     </entity>
     <entity name="Entity" representedClassName="Entity" syncable="YES" codeGenerationType="class"/>
     <entity name="O" representedClassName="O" syncable="YES" codeGenerationType="class"/>
+    <entity name="Tamanho" representedClassName="Tamanho" syncable="YES" codeGenerationType="class">
+        <attribute name="descricao" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="UnidadeMedida" representedClassName="UnidadeMedida" syncable="YES" codeGenerationType="class">
+        <attribute name="descricao" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="Usuario" representedClassName="Usuario" syncable="YES" codeGenerationType="class">
         <attribute name="usu_ID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="usu_Nome" optional="YES" attributeType="String" syncable="YES"/>
@@ -36,8 +44,10 @@
         <element name="Categoria" positionX="-333" positionY="297" width="128" height="73"/>
         <element name="Categorias" positionX="-459" positionY="45" width="128" height="75"/>
         <element name="Empresa" positionX="-657" positionY="-99" width="128" height="133"/>
+        <element name="Entity" positionX="-459" positionY="45" width="128" height="45"/>
         <element name="O" positionX="-459" positionY="45" width="128" height="45"/>
         <element name="Usuario" positionX="-63" positionY="-18" width="128" height="90"/>
-        <element name="Entity" positionX="-459" positionY="45" width="128" height="45"/>
+        <element name="UnidadeMedida" positionX="-459" positionY="45" width="128" height="75"/>
+        <element name="Tamanho" positionX="-450" positionY="54" width="128" height="75"/>
     </elements>
 </model>

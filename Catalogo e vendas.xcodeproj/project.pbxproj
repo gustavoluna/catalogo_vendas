@@ -15,6 +15,8 @@
 		0175FA261E31889F00797469 /* CatalogoListaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175FA251E31889F00797469 /* CatalogoListaViewController.swift */; };
 		0175FA291E31897900797469 /* CatalogoDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175FA281E31897900797469 /* CatalogoDomain.swift */; };
 		017C02D81E28491A0010E5CB /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017C02D71E28491A0010E5CB /* Usuario.swift */; };
+		017C9DD71E3D048F00B65942 /* UnidadeMedidaListaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017C9DD61E3D048F00B65942 /* UnidadeMedidaListaController.swift */; };
+		017C9DE51E3D0C5400B65942 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017C9DE41E3D0C5400B65942 /* CoreDataStack.swift */; };
 		01A63C131E384A3900AFEDDF /* CatalogoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A63C121E384A3900AFEDDF /* CatalogoTableViewCell.swift */; };
 		01B1B2641E2EEEB300F04B2B /* CatalogoAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B1B2631E2EEEB300F04B2B /* CatalogoAddViewController.swift */; };
 		01B1B2661E2EF4C700F04B2B /* CatalogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B1B2651E2EF4C700F04B2B /* CatalogoViewController.swift */; };
@@ -36,6 +38,8 @@
 		0175FA251E31889F00797469 /* CatalogoListaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogoListaViewController.swift; sourceTree = "<group>"; };
 		0175FA281E31897900797469 /* CatalogoDomain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogoDomain.swift; sourceTree = "<group>"; };
 		017C02D71E28491A0010E5CB /* Usuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
+		017C9DD61E3D048F00B65942 /* UnidadeMedidaListaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnidadeMedidaListaController.swift; sourceTree = "<group>"; };
+		017C9DE41E3D0C5400B65942 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		01A63C121E384A3900AFEDDF /* CatalogoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogoTableViewCell.swift; sourceTree = "<group>"; };
 		01B1B2631E2EEEB300F04B2B /* CatalogoAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogoAddViewController.swift; sourceTree = "<group>"; };
 		01B1B2651E2EF4C700F04B2B /* CatalogoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogoViewController.swift; sourceTree = "<group>"; };
@@ -96,9 +100,11 @@
 				01B1B2631E2EEEB300F04B2B /* CatalogoAddViewController.swift */,
 				01B1B2651E2EF4C700F04B2B /* CatalogoViewController.swift */,
 				0175FA251E31889F00797469 /* CatalogoListaViewController.swift */,
+				017C9DE41E3D0C5400B65942 /* CoreDataStack.swift */,
 				014A4D171E32CCD500202AC3 /* CatalogoDetalheViewController.swift */,
 				01300ADE1E33FF3A00E4BFE5 /* CategoriasController.swift */,
 				01A63C121E384A3900AFEDDF /* CatalogoTableViewCell.swift */,
+				017C9DD61E3D048F00B65942 /* UnidadeMedidaListaController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -213,12 +219,14 @@
 				01CCCBFE1E25B40E00261428 /* AppDelegate.swift in Sources */,
 				0175FA261E31889F00797469 /* CatalogoListaViewController.swift in Sources */,
 				013B5F3D1E2C0BA7000F821C /* EmpresaController.swift in Sources */,
+				017C9DE51E3D0C5400B65942 /* CoreDataStack.swift in Sources */,
 				01EBE0BA1E29B1770087248E /* PrincipalController.swift in Sources */,
 				013B5F3B1E2C0443000F821C /* Empresa.swift in Sources */,
 				017C02D81E28491A0010E5CB /* Usuario.swift in Sources */,
 				01CCCC061E25B40E00261428 /* Catalogo_e_vendas.xcdatamodeld in Sources */,
 				01300ADF1E33FF3A00E4BFE5 /* CategoriasController.swift in Sources */,
 				01B1B2641E2EEEB300F04B2B /* CatalogoAddViewController.swift in Sources */,
+				017C9DD71E3D048F00B65942 /* UnidadeMedidaListaController.swift in Sources */,
 				014A4D161E32C48200202AC3 /* Catalogo.swift in Sources */,
 				014A4D181E32CCD500202AC3 /* CatalogoDetalheViewController.swift in Sources */,
 				01A63C131E384A3900AFEDDF /* CatalogoTableViewCell.swift in Sources */,

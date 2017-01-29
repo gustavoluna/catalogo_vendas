@@ -14,24 +14,87 @@ class CatalogoDetalheViewController: UIViewController {
     @IBOutlet weak var txtNome: UITextField!
     @IBOutlet weak var txtDescricao: UITextField!
     private let segueEditQuoteViewController = "detailSegue";
-    var managedObjectContext: NSManagedObjectContext?
-    
+    var managedContext: NSManagedObjectContext!
+    var currentBowtie: Catalogo!
+    var index: Int?
     var dadosDetail: catalogoDomain?
+    var listaCatalogoEdit : [Catalogo] = []
+     var tasks : [Catalogo] = []
     
-    @IBAction func btnAlterar(_ sender: Any)
-    {
-        //guard let managedObjectContext = managedObjectContext else { return }
+    
+    func getContext () -> NSManagedObjectContext {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        return appDelegate.persistentContainer.viewContext
+    }
 
-        var managedObjectContext: NSManagedObjectContext?
-        if let dadosDetail = dadosDetail {
-            // Configure Quote
-            dadosDetail.nome = txtNome.text!;
-            dadosDetail.descricao = txtDescricao.text!;
+    
+    @IBAction func btnGravar(_ sender: Any)
+    {
+        /*let context =  (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        
+       
+            let task = tasks[index]
             
-            // Pop View Controller_ = navigationController?.popViewController(animated: true)
-            // Pop View Controller
-            _ = navigationController?.popViewController(animated: true)
+            try context.save(task)
+            (UIApplication.shared.delegate as! AppDelegate).saveContext()
+            
+            do
+            {
+                tasks = try context.fetch(Catalogo.fetchRequest())
+            }
+            catch
+            {
+                print("erro")
+            }*/
+        let context =  (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        do
+        {
+            tasks = try context.fetch(Catalogo.fetchRequest())
+            let user = tasks[index!]
+
         }
+        catch
+        {
+            print("erro")
+        }
+
+        
+        
+        
+
+        //let context = getContext()
+        //let fetchRequest: NSFetchRequest<Catalogo> = Catalogo.fetchRequest()
+       /* let context = getContext()
+        let fetchRequest: NSFetchRequest<Catalogo> = Catalogo.fetchRequest()
+        
+        do {
+            let array_users = try getContext().fetch(fetchRequest)
+            let user = array_users[index]
+            
+            user.setValue(txtNome.text, forKey: "nome")
+            user.setValue(txtDescricao.text, forKey: "descricao")
+            
+           // print("\(user.value(forKey: "email"))")
+           // context.save(user)
+            //save the context
+            do
+            {
+                try context.save()
+                print("saved!")
+            }
+            catch let error as NSError
+            {
+                print("Could not save \(error), \(error.userInfo)")
+            }
+            catch {
+                
+            }
+            
+        } catch {
+            print("Error with request: \(error)")
+        }*/
+        
+        self.dismiss(animated: true, completion: nil)
     }
     
     override func viewDidLoad()
@@ -43,6 +106,13 @@ class CatalogoDetalheViewController: UIViewController {
             title = dadosDetail.nome
             txtNome.text = dadosDetail.nome
             txtDescricao.text = dadosDetail.descricao
+            
+            
+        }
+        if let index = index
+        {
+            
+            print(index)
         }
 
         // Do any additional setup after loading the view.

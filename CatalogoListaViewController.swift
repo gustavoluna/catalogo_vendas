@@ -10,12 +10,17 @@ import UIKit
 import CoreData
 import Foundation
 
+    extension Notification.Name {
+        static let reload = Notification.Name("reload")
+    }
+    
 class CatalogoListaViewController: UIViewController,UITableViewDataSource {
     
-   
     //class CatalogoListaViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
-   
+    
+    
+    
     
     private let segueEditQuoteViewController = "detailSegue"
     var Listacatalogo = [catalogoDomain]();
@@ -29,17 +34,32 @@ class CatalogoListaViewController: UIViewController,UITableViewDataSource {
         
         Listacatalogo = OCatalogo.RetornarCatalogo();//OCatalogo.RetornarCatalogo();
         // Do any additional setup after loading the view.
+        
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(reloadTableData(_:)), name: .reload, object: nil)
+    
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
+    
+    
+    
+    func reloadTableData(_ notification: Notification) {
+        //tableView.reloadData();
+        //reloadData()
+        tableView.dataSource = self
+        Listacatalogo = OCatalogo.RetornarCatalogo();//OCatalogo.RetornarCatalogo();
+        tableView.reloadData()
+        
+    }
 
     //bailoni
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         
         return Listacatalogo.count;
         
@@ -60,6 +80,61 @@ class CatalogoListaViewController: UIViewController,UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool
+    {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath)
+    {
+       let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        if editingStyle == .delete
+        {
+            let task = Listacatalogo[indexPath.row]
+          //  context.delete(NSManagedObject<catalogoDomain>)
+            
+            tableView.reloadData()
+
+           // reloadTableData(notif)
+        }
+    }
+    
+    /*novo*/
+    func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        tableView.beginUpdates()
+    }
+    
+    func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange sectionInfo: NSFetchedResultsSectionInfo, atSectionIndex sectionIndex: Int, for type: NSFetchedResultsChangeType) {
+        switch type {
+        case .insert:
+            tableView.insertSections(IndexSet(integer: sectionIndex), with: .fade)
+        case .delete:
+            tableView.deleteSections(IndexSet(integer: sectionIndex), with: .fade)
+        case .move:
+            break
+        case .update:
+            break
+        }
+    }
+    
+    func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
+        switch type {
+        case .insert:
+            tableView.insertRows(at: [newIndexPath!], with: .fade)
+        case .delete:
+            tableView.deleteRows(at: [indexPath!], with: .fade)
+        case .update:
+            tableView.reloadRows(at: [indexPath!], with: .fade)
+        case .move:
+            tableView.moveRow(at: indexPath!, to: newIndexPath!)
+        }
+    }
+    
+    func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        tableView.endUpdates()
+    }
+    
+    //fim
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -67,10 +142,15 @@ class CatalogoListaViewController: UIViewController,UITableViewDataSource {
             if let dtViewController = segue.destination as? CatalogoDetalheViewController{
                 if let indexPath = tableView.indexPath(for: sender as! UITableViewCell){
                     dtViewController.dadosDetail = Listacatalogo[indexPath.row] as catalogoDomain
+                    dtViewController.index = indexPath.row;
+                   // dtViewController.listaCatalogoEdit = Listacatalogo;
                 }
             }
         }
+        
     }
+    
+    
     
 
     /*
@@ -84,3 +164,5 @@ class CatalogoListaViewController: UIViewController,UITableViewDataSource {
     */
 
 }
+    extension ViewController: NSFetchedResultsControllerDelegate {
+    }
